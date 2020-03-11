@@ -1,0 +1,153 @@
+h1{
+    background-color:rgb(230, 189, 173);
+    color: rgb(10, 2, 2);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+} 
+h2{
+	background-color:rgb(224, 190, 146);
+	width: 80%;
+	
+    color: rgb(107, 45, 17);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+  
+
+}
+p{
+	color: rgb(10, 2, 2);
+     font-family: Garamond, "Times New Roman", serif; 
+     font-size: 13pt;
+     font-weight: bold;
+     margin: 5px;
+}
+
+li{
+    color: rgb(10, 2, 2);
+     font-family: Garamond, "Times New Roman", serif; 
+     font-size: 13pt;
+     font-weight: bold;
+     margin: 5px;
+}
+#pic{
+
+
+	width: 60%;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 20% auto ;
+	grid-gap: 10px;
+}
+img{
+    width:100%;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.grid-container > div{
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: left;
+    background-color: rgb(221, 255, 205);
+}
+#header{
+    grid-column: 1/span 2;
+}
+
+#menu{
+    grid-column: 1/span 1;
+}
+
+#main{
+	grid-column: 1/span 1;
+
+}
+#right{
+	grid-column: 1/span 1;
+}
+#footer{
+	grid-column: 2/span 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.grid-container { 
+		
+        grid-template-columns: 20% auto;
+         
+	}
+
+	#header{
+		grid-column: 1/span 2;
+	}
+	#menu{
+		grid-column: 1/span 1;
+	}
+	
+	#main{
+		grid-column: 2/span 1;
+	}
+	#right{
+		grid-column: 1/span 1;
+	}
+	#footer{
+		grid-column: 2/span 2;
+	}
+	
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		
+        grid-template-columns: 20% auto;
+        
+		 
+	}
+	#header{
+		grid-column: 1/span 2;
+	}
+	#menu{
+		grid-column: 1/span 1;
+		
+	}
+		
+	#main{
+		grid-column: 1/span 1;
+
+	}
+	#right{
+		grid-column: 1/span 1;
+	}
+	}
+	#footer{
+		grid-column: 2/span 1;
+		
+	}
+}
+.flex_container{
+    
+    flex-wrap: wrap;
+    width: 100%;
+	justify-content: center;
+}
+.flex_container > div{
+    border: 2px solid rgb(22, 99, 25);
+    width: 20%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+a:link{
+	color: rgb(241, 122, 122), 44, 44); 
+} 
+a:visited{
+	color: rgb(109, 197, 109); 
+} 
+a:hover{ 
+	color: rgb(32, 128, 120); 
+} 
